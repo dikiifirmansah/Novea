@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novea</title>
+<script>try{var m=JSON.parse(localStorage.getItem('novea_rmode'));if(!m&&matchMedia('(prefers-color-scheme: dark)').matches)m='dark';if(m==='dark')document.documentElement.dataset.theme='dark'}catch(e){}try{var u=JSON.parse(localStorage.getItem('novea_ui')),M={s:.9,m:1,l:1.15,xl:1.3};if(u&&M[u])document.documentElement.style.setProperty('--ui',M[u])}catch(e){}</script>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#F3F7FB">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar" id="bar">
+  <button class="ibtn" id="back" aria-label="Kembali" hidden></button>
+  <img class="mark" id="mark" src="mark.png" alt="Novea">
+  <div class="htabs" id="htabs" hidden><button id="tabLib">Perpustakaan</button><button id="tabNotes">Catatan</button></div>
+  <h1 id="title" hidden></h1>
+  <div class="hstat" id="hstat" hidden><span id="nSt" class="ok">Tersimpan</span></div>
+  <button class="ibtn" id="hUn" aria-label="Urungkan" hidden></button>
+  <button class="ibtn" id="hRe" aria-label="Ulangi" hidden></button>
+  <button class="ibtn" id="barAct" aria-label="Menu" hidden></button>
+  <button class="ibtn" id="setBtn" aria-label="Pengaturan"></button>
+  <span class="rule" id="rule"></span>
+</header>
+<main id="main"></main>
+<button class="fab" id="fab" aria-label="Tambah" hidden></button>
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
